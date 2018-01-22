@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sara's work</title>
+    <style>
+    li,a{text-decoration:none;}
+    .navbar{
+        font: 16px;
+        color:#000;
+        background-color:#f1f1f1; 
+        margin:0;
+        padding:0;
+        }
+    .menu>li{
+        display:block;
+        float:left;
+        }
+    .menu>li>a{
+        padding:6px 12px;
+    }
+    .clearfix::after{
+        content:'';
+        display:block;
+        clear: both;
+    }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="menu">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">作品</a></li>
+            <li><a href="#">更多</a>
+                <ul class="morelist">
+                    <li>GitHub</li>
+                    <li>博客</li>
+                    <li>知乎</li>
+                </ul>
+            </li>
+            <li class="clearfix"></li>
+        </ul>
+    </div>
+</body>
+</html>
