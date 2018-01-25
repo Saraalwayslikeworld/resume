@@ -19,39 +19,59 @@
             border-bottom:1px solid #ccc;
             padding-bottom:10px;
         }
-        li{ 
+        .container{ 
+            margin-left:-10px;
+            padding:0;
+         }
+        .container:after{
+            content:'';
+            display:block;
+            clear:both;
+        }
+        .card{ 
             list-style:none;
             float:left;
             margin-left:10px;
             margin-top:30px;
+            width:260px;
+            box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .card>img{
+            width:100%;
+            opacity:0.7;
+        }
+        p{
+            display:block;
+            text-align:center;
+            padding:1px 16px;
         }
     </style>
 </head>
 <body>
     <div>
         <h1 class="head">风景列表</h1>
-        <ul>
-            <li>
+        <ul class="container">
+            <li class="card">
                 <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="">
                 <p>风景如画</p>
             </li> 
-            <li>
+            <li class="card">
                 <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="">
                 <p>风景如画</p>
             </li> 
-            <li>
+            <li class="card">
                 <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="">
                 <p>风景如画</p>
             </li>
-            <li>
+            <li class="card">
                 <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="">
                 <p>风景如画</p>
             </li>
-            <li>
+            <li class="card">
                 <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="">
                 <p>风景如画</p>
             </li>
-            <li>
+            <li class="card">
                 <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="">
                 <p>风景如画</p>
             </li> 
