@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sara's demo</title>
+    <style>
+        div {
+            position: relative;
+            margin:30px auto;
+            width:160px;
+            height:50px;
+            border:1px solid #ccc;
+        }
+        .tootip1::after {
+            content:'';
+            display:inline-block;
+            position:absolute;
+            top:-6px;
+            left:10px;
+            -webkit-transform:rotate(-45deg);     
+            border-top:6px solid #666;
+            border-right:6px solid #666;
+            border-bottom:6px solid #fff;
+            border-left:6px solid #fff;
+        }
+        .tootip2::after {
+            content:'';
+            display:inline-block;
+            position:absolute;
+            right:0;
+            border-top:6px solid red;
+            border-right:6px solid red;
+            border-bottom:6px solid #fff;
+            border-left:6px solid #fff;
+        }
+        .tootip3::after {
+            content:'';
+            display:inline-block;
+            position:absolute;
+            top:-7px;
+            left:10px;
+            -webkit-transform:rotate(-45deg);     
+            border-top:1px solid #ccc;
+            border-right:1px solid #ccc;
+            width:12px;
+            height:12px;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>  
+    <div class="tootip1"></div>
+    <div class="tootip2"></div>   
+    <div class="tootip3"></div>    
+</body>
+</html>
