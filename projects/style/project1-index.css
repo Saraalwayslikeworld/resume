@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #fff;
 }
 a {
     text-decoration: none;
@@ -17,135 +16,202 @@ ul,li {
     display: block;
     clear: both;
 }
-.com-text {
-    margin-top: 20px;
+.layout {
+    margin: 200px auto;
+    width: 80%;
+    min-width: 1000px;
+}
+.p-text {
     font: 14px/1.5 arial;
     font-style: italic;
-    color: #ddd;
+    color: #888;
 }
 .h-text {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
+.ellipsis {
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+.button {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 3px;
+    background: #fed136;
+    font-size: 28px;
+    color: #fff;
+    opacity: 0.8;
+}
+.button:hover {
+    box-shadow: 6px 9px 35px -8px rgba(235,197,85,0.7);
+    opacity: 1;
+}
 body {
-    background: #081a24;
+    background: #fff;
+    color: #333;
 }
 /* header css */
 header {
     position: relative;
     margin: 0 auto;
+    padding: 1px;
     height: 100vh;
-    padding: 10px;
-    background: #ccc url("../images/head.jpg") no-repeat;
+    width: 100%;
+    background: #ccc url("../images/head.jpg")  no-repeat;
     background-size: cover;
     text-align: center;
 }
-.navbar {
-    margin-top: 20px;
-    margin-right: 50px;
+header .navbar {
+    margin: 20px auto;
 }
-.logo {
+header .logo {
+    position: fixed;
+    top: 20px;
+    left: 0;
     float: left;
     margin-left: 60px;
     font: 32px bold;
     color: #fed136;
 }
-.nav>li{
+header .nav {
+    margin-right: 60px;
+}
+header .nav>li{
     float: right;
     margin-right: 10px;
 }
-.nav a {
+header .nav a {
     display: inline-block;
     padding: 8px; 
     font: 18px serif bold;
     color: #fff;
 }
-.nav a:hover{
+header .nav a:hover{
     color: #fed136;
 }
-.intro {
+header .intro {
     position: absolute;
     top: 70%;
     left: 50%;
     transform: translate(-50%,-50%); 
     width: 100%;
 }
-.intro h1{
+header .intro h1{
+    margin-bottom: 30px;
     font: 50px/1.5 bold sans-serif;
     font-style: italic;
     color:#fff; 
 }
-.intro h2 {
-    margin-top:15px;
+header .intro h2 {
     margin-bottom:30px;
     font-size: 80px;
     color: #fff;
 }
-.intro>a {
+
+/* section1 城市特色 */
+section .title {
+    margin: 50px auto;
+    text-align: center;
+}
+section .title h1 {
+    font-size: 32px;
+} 
+section .feature {
+    margin-top: 100px;
+}
+section .feature li {
+    float: right;
+    width: 33.3%;
+    padding: 0 15px;
+    text-align: center;
+}
+section .feature li>h3 {
+    margin: 30px 0;
+}
+section .iconfont {
     display: inline-block;
-    padding: 10px 28px;
-    border-radius: 3px;
-    border: 1px solid #fed136;
+    padding: 20px;
     background: #fed136;
-    font-size: 28px;
+    border-radius: 50%;
+    vertical-align: middle;
+    font-size: 60px;
     color: #fff;
 }
-/* section1 character */
-section {
-    margin: 120px auto;
-    width:80%;
-    height: 100vh;
-    text-align: center;
+/* section2 景点 */
+section .viwpoint li {
+    float: right;
+    width: calc(33.33% - 60px);
+    margin: 30px 30px;
+    padding-bottom: 20px;
+  /*  border: 1px solid #fed136;*/
+   background-color: #eee;
 }
-.title {
-    margin: 30px auto;
-    padding: 0 30px;
-    text-align: center;
-}
-.title h1 {
-    font-size: 32px;
-}
-.list {
-    display: inline-block;
-    width: 380px;
-    height: 400px;
-    vertical-align: middle;
-    margin-left: 20px;
-}
-.list>div {
+section .viwpoint a {
+    display: block;
     position: relative;
-    width: 200px;
-    height: 200px;
-    margin: 30px auto;
-    background: #fed136 ;
-    background-size: cover;
-    border-radius: 50%;
-    text-align: center;
+    height: 280px;
 }
-.list>div>img {
+section .viwpoint img {
+    width: 100%;
+    height: 100%;
+}
+section .viwpoint h4 {
+    text-align: center;
+    margin: 15px auto;
+}
+section .viwpoint p {
+    text-indent: 2em;
+    font-style: normal; 
+    margin: 0 10px;
+    font-size: 12px; 
+    color: #888; 
+}
+
+section .viwpoint  span {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width:50%;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    font: 100px 'iconfont';
+    color: #fff;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 100px; 
+    background: #fed136 ;
+    opacity:0.8;
+    display: none;
 }
-/* section2 viwpoint */
-.vw-list {
-    margin-right: -30px;
+
+section .viwpoint a:hover .go {
+    display: block;
 }
-.vw-list>li {
+/* section3 历史*/
+section .history li:nth-child(odd) {
+     width: 50%;
+     margin-left:30px;
+     text-align: right;
+}
+section .history li:nth-child(even) {
+    width: 50%;
+    margin-right:30px;
+    text-align: left;
+}
+section .history img:nth-child(odd) {
     float: left;
-    position: relative;
-    margin-right: 30px;
-    width:360px;
-    height:400px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #fed136;
 }
-.vw-list img{
-    width: 360px;
-    height: 250px;
-    border-radius: 3px;
-}
-.vw:hover {
-    background: #fed136;
-    opacity: 0.8;
+section .history img:nth-child(even) {
+    float: right;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #fed136;
 }
