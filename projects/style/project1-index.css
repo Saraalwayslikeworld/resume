@@ -191,27 +191,32 @@ section .viwpoint a:hover .go {
     display: block;
 }
 /* section3 历史*/
+section .history li {
+    content: '';
+    display: block;
+    clear: both;
+}
+section .history li > img{
+    height: 100px;
+    width: 100px;
+    border: 3px solid #fed136;
+    border-radius: 50%;
+}
+section .history li:nth-child(odd) img {
+    float: right;
+}
 section .history li:nth-child(odd) {
-     width: 50%;
-     margin-left:30px;
-     text-align: right;
+    padding-right: calc(50% - 100px);
+}
+section .history li:nth-child(odd) dl {
+    margin-right: 120px;   
+}
+section .history li:nth-child(even) img {
+    float:left;
 }
 section .history li:nth-child(even) {
-    width: 50%;
-    margin-right:30px;
-    text-align: left;
+    padding-left: calc(50% - 100px);
 }
-section .history img:nth-child(odd) {
-    float: left;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 2px solid #fed136;
-}
-section .history img:nth-child(even) {
-    float: right;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 2px solid #fed136;
+section .history li:nth-child(odd) dl {
+    margin-left: 120px;   
 }
