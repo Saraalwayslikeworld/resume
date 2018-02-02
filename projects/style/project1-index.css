@@ -1,3 +1,4 @@
+
 /* reset */
 * {
     margin: 0;
@@ -22,7 +23,7 @@ ul,li {
     min-width: 1000px;
 }
 .p-text {
-    font: 14px/1.5 arial;
+    font: 14px/1.5 'Playfair Display', serif;
     font-style: italic;
     color: #888;
 }
@@ -42,7 +43,7 @@ ul,li {
     padding: 10px 30px;
     border-radius: 3px;
     background: #fed136;
-    font-size: 28px;
+    font: 28px  'Rammetto One';
     color: #fff;
     opacity: 0.8;
 }
@@ -69,12 +70,12 @@ header .navbar {
     margin: 20px auto;
 }
 header .logo {
-    position: fixed;
+    position: absolute;
     top: 20px;
     left: 0;
     float: left;
     margin-left: 60px;
-    font: 32px bold;
+    font: 32px 'Indie Flower', cursive;
     color: #fed136;
 }
 header .nav {
@@ -102,8 +103,9 @@ header .intro {
 }
 header .intro h1{
     margin-bottom: 30px;
-    font: 50px/1.5 bold sans-serif;
+    font: 50px/1.5 'Playfair Display', serif;
     font-style: italic;
+    letter-spacing: 0.1em;
     color:#fff; 
 }
 header .intro h2 {
@@ -113,6 +115,7 @@ header .intro h2 {
 }
 
 /* section1 城市特色 */
+
 section .title {
     margin: 50px auto;
     text-align: center;
@@ -141,14 +144,15 @@ section .iconfont {
     font-size: 60px;
     color: #fff;
 }
-/* section2 景点 */
+
+/* section2 景点推荐 */
+
 section .viwpoint li {
     float: right;
-    width: calc(33.33% - 60px);
-    margin: 30px 30px;
+    width: calc(33.33% - 40px);
+    margin: 30px 20px;
     padding-bottom: 20px;
-  /*  border: 1px solid #fed136;*/
-   background-color: #eee;
+    background-color: #eee;
 }
 section .viwpoint a {
     display: block;
@@ -186,37 +190,200 @@ section .viwpoint  span {
     opacity:0.8;
     display: none;
 }
-
 section .viwpoint a:hover .go {
     display: block;
 }
-/* section3 历史*/
-section .history li {
+
+/* section3 上海历史*/
+
+section .history li:after {
     content: '';
     display: block;
     clear: both;
 }
+section .history li {
+    margin-bottom: 60px;
+}
 section .history li > img{
-    height: 100px;
-    width: 100px;
-    border: 3px solid #fed136;
+    height: 160px;
+    width:160px;
+    border: 4px solid #f8dd7a;
     border-radius: 50%;
+}
+section .history li dt {
+    font-weight: bold;
+    font-size: 18px;
 }
 section .history li:nth-child(odd) img {
     float: right;
 }
 section .history li:nth-child(odd) {
-    padding-right: calc(50% - 100px);
+    padding-right: calc(50% - 80px);
 }
 section .history li:nth-child(odd) dl {
-    margin-right: 120px;   
+    margin-right: 180px; 
+    text-align: right; 
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 section .history li:nth-child(even) img {
     float:left;
 }
 section .history li:nth-child(even) {
-    padding-left: calc(50% - 100px);
+    padding-left: calc(50% - 80px );
 }
-section .history li:nth-child(odd) dl {
-    margin-left: 120px;   
+section .history li:nth-child(even) dl {
+    margin-left: 180px;  
+    text-align: left; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+section .history li:last-child {
+    padding-left: calc(50% - 80px );
+}
+section .history li:last-child span {
+    display: block;
+    height: 160px;
+    width: 160px;
+    border: 4px solid #f8dd7a;
+    border-radius: 50%;
+    padding-top: 50px;
+    background-color: #fed136;
+    text-align: center;
+    color: #fff;
+    font: 22px bold;
+}
+#history {
+    position: relative;
+}
+#history .history:before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 50%;
+    height: 1000px;
+    border-left: 4px dashed #f8dd7a;
+    z-index: -1;
+}
+
+/* section4 购物推荐 */
+
+section .shopping li {
+    float: left;
+    width: calc(33.3% - 100px);
+    margin: 0 50px;
+    text-align: center;
+}
+section .shopping li>img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #f8dd7a;
+    margin-bottom: 20px;
+}
+section .shopping li dt {
+    font-weight: bold;
+}
+section .shopping li dd {
+    font-size: 16px;
+    margin: 10px auto;
+    text-align: center;
+}
+section .shopping li>a:hover span{
+    color: #fed136;
+}
+section .shopping li span {
+    font: 40px 'iconfont';
+    color: #333;
+    letter-spacing: 0.4em;
+}
+
+/******广告栏******/
+footer .adBar img {
+    height: 50px; 
+    margin: 0 10px;   
+}
+footer .adBar {
+    margin: 100px auto;
+    text-align: center;
+}
+
+/***联系我们***/
+
+#contact {
+    width: 100%;
+    height: 100vh;
+    background: rgb(61, 61, 61) url("../images/footer.jpg") ;
+    background-size: cover;
+    padding: 1px;
+    text-align: center;
+}
+#contact .title {
+    margin: 100px auto;
+}
+#contact .title h1 {
+    font-size: 40px;
+    color: #fed136;    
+}
+section form .input {
+    width: 50%;
+    float: left;
+}
+section form .input input {
+    display: block;
+    width: calc(100% - 210px);
+    height: 60px;
+    margin-bottom: 20px;
+    margin-left: 200px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+section form #message {
+    float: right;
+    width: calc(50% - 160px);
+    height: 220px;
+    margin-right: 150px;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+section form #message::placeholder {
+    font: 14px bold;
+}
+#contact a {
+    display: inline-block;
+    
+    margin-top: 30px;
+}
+
+/******** 页脚 *******/
+
+footer .footer{
+    width: 80%;
+    margin: 0 auto;
+}
+footer .footer span {
+    float: left;
+    width: calc(33.3% - 20px);
+    margin: 20px 10px;
+    text-align: center;
+    
+}
+footer .footer span a {
+    vertical-align: middle;
+}
+footer .footer .contact-info a {
+    font: 30px 'iconfont';
+    color: #333;
+    letter-spacing: 0.3em;
+}
+footer .footer .contact-info a:hover {
+    font: 30px 'iconfont';
+    color: #fed136;
+}
+footer span:last-child a {
+    color: #fed136;
 }
