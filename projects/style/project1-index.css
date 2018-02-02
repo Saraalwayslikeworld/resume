@@ -153,10 +153,6 @@ section .viwpoint li {
     width: calc(33.33% - 40px);
     margin: 30px 20px;
     padding-bottom: 20px;
-<<<<<<< HEAD
-=======
-    border: 1px solid #fff;
->>>>>>> f42f2415fd3dea2769e32c276a769ea1c86b89c8
     background-color: #eee;
 }
 section .viwpoint a {
