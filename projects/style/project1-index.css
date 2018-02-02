@@ -125,8 +125,9 @@ section .feature {
 }
 section .feature li {
     float: right;
-    width: 33.3%;
+    width: calc(33.3% - 80px);
     padding: 0 15px;
+    margin: 0 40px;
     text-align: center;
 }
 section .feature li>h3 {
@@ -147,8 +148,8 @@ section .viwpoint li {
     width: calc(33.33% - 60px);
     margin: 30px 30px;
     padding-bottom: 20px;
-  /*  border: 1px solid #fed136;*/
-   background-color: #eee;
+    border: 1px solid #fff;
+    background-color: #eee;
 }
 section .viwpoint a {
     display: block;
