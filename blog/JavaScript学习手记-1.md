@@ -136,11 +136,13 @@ obj == 1   //true
 ####4. null == undefined //true
 -------------------------------------------------------
 ## toNumber
-   
-undefined  -->  NaN 
-null            -->  0 
-boolean     -->  true:1, false:0 
-string         --> "abc":NaN,"123":123
+
+|type|toNumber|
+|:---:|:---:|
+|undefined|NaN| 
+|null|0| 
+|boolean|true:1, false:0|
+|string|"abc":NaN,"123":123|
 
 -------------------------------------------------------
 ##总结：
