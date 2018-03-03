@@ -39,7 +39,9 @@
       box1.addEventListener('click',function(){console.log('box1 click 冒泡')},false);
       box1.addEventListener('click',function(){console.log('box1 click 捕获')},true);
       box2.addEventListener('click',function(){console.log('box2 click 冒泡')},false);
-      box2.addEventListener('click',function(){console.log('box2 click 捕获')},true);   
+      box2.addEventListener('click',function(e){
+        //e.stopPropagation();
+        console.log('box2 click 捕获')},true);   
       box3.addEventListener('click',function(){console.log('box3 click 冒泡')},false);
       box3.addEventListener('click',function(){console.log('box3 click 捕获')},true);
       target.addEventListener('click',function(){console.log('target click 冒泡')},false);  
