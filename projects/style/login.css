@@ -24,7 +24,7 @@ header .user-login {
     position: absolute;
     top: 20px;
     right: 20px;
-    color: #fff;
+    color: rgb(240, 169, 87);
 }
 main .flip-modal {
     display: none;
