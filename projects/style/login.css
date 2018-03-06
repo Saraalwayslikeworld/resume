@@ -45,6 +45,7 @@ main .modal {
     right: 10px;
     top: 10px;
     font-size: 16px;
+    color: #333;
 }
 .modal .tabs {
     text-align: center;
