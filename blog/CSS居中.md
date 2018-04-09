@@ -1,4 +1,5 @@
-# 元素居中
+# 元素居中的几种方法
+padding、margin、position、flex布局
 ***
 ## 水平居中
 ### 1.行内元素水平居中
