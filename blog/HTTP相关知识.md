@@ -84,3 +84,9 @@ HTTP  (HypertextTransferProtocol/超文本传输协议) 是应用层级（applic
     Last-Modified: Wed, 04 Jul 2018 09:13:54 GMT
 
     If-Modified-Since: Wed, 04 Jul 2018 09:13:54 GMT
+
+
+## 5.HTTPS
+关于https的原理，有很多文章已经讲得很好啦。简单上幅图。
+![](http://p5s9qkvol.bkt.clouddn.com/18-7-21/3669328.jpg)
+![](http://p5s9qkvol.bkt.clouddn.com/18-7-21/7562253.jpg)
