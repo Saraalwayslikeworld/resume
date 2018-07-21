@@ -88,5 +88,11 @@ HTTP  (HypertextTransferProtocol/超文本传输协议) 是应用层级（applic
 
 ## 5.HTTPS
 关于https的原理，有很多文章已经讲得很好啦。简单上幅图。
+
 ![](http://p5s9qkvol.bkt.clouddn.com/18-7-21/3669328.jpg)
+
 ![](http://p5s9qkvol.bkt.clouddn.com/18-7-21/7562253.jpg)
+
+3.为防止"中间人攻击"，引入第三方“CA证书”，CA为交换信息对象的合法性背书。
+
+**非对称加密 + 对称加密 + CA => HTTPS**
