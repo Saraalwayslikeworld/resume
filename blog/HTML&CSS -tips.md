@@ -45,8 +45,10 @@ CSRF攻击是跨站请求伪造，是一种挟制用户在当前已登录的Web�
 - vw:相对单位，相对于屏幕大小，vw = 1% 视口宽度, 。
 ***
 #### 7. IE盒模型和W3C盒模型
-- IE盒模型中width和height包含content、padding和border；
-- W3C盒模型的width和height仅指content的高宽。
+- border-box IE盒模型中width和height包含content、padding和border；
+- content-box W3C盒模型的width和height仅指content的高宽。
+.child{width:100%}
+content-box下父元素与子元素content宽度相等，border-box下父元素content=子元素margin+border+padding+content
 ***
 #### 8. 让一个元素"看不见"的方式
 1. opacity:0 使整体变透明，元素仍占据位置
